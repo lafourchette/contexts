@@ -15,7 +15,7 @@ class Request
 
     public function __call($name, $arguments)
     {
-        return call_user_func_array([$this->getClient(), $name], $arguments);
+        return call_user_func_array(array($this->getClient(), $name), $arguments);
     }
 
     private function getClient()

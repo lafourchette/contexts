@@ -40,7 +40,7 @@ class JsonContext extends BaseContext
     public function theResponseShouldNotBeInJson()
     {
         $this->not(
-            [$this, 'theResponseShouldBeInJson'],
+            array($this, 'theResponseShouldBeInJson'),
             'The response is in JSON'
         );
     }

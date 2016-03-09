@@ -53,12 +53,12 @@ class Extension implements ExtensionInterface
         $definition = $container->getDefinition('behatch.context_supported.voter');
 
         foreach ($references as $reference) {
-            $definition->addMethodCall('register', [$reference]);
+            $definition->addMethodCall('register', array($reference));
         }
     }
 
     public function getCompilerPasses()
     {
-        return [];
+        return array();
     }
 }
